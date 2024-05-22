@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+    body {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+
+    .navBar {
+      height: 100px;
+      width: 100%;
+      border: 1px solid black;
+      background-color: #3B3F40;
+    }
+
+    .banner {
+      height: 400px;
+      width: 100%;
+      border: 1px solid black;
+      display: flex;
+    }
+
+    .back1 {
+      position: relative;
+      bottom: -225px;
+      left: -820px;
+    }
+
+    .ourServices {
+      height: 400px;
+      width: 100%;
+      border: 1px solid black;
+    }
+
+    .title {
+      height: 400px;
+      width: 100%;
+      border: 1px solid black;
+      background-color: #3B3F40;
+
+    }
+
+
+    .loverAnimal {
+      height: 800px;
+      width: 100%;
+      border: 1px solid black;
+    }
+
+    .sale {
+      height: 700px;
+      width: 100%;
+      border: 1px solid black;
+      position: relative;
+      bottom: 00px;
+
+    }
+
+    .team {
+      height: 400px;
+      width: 100%;
+      border: 1px solid black;
+    }
+
+    .clients {
+      height: 800px;
+      width: 100%;
+      border: 1px solid black;
+      background-color: #3B3F40;
+
+    }
+
+    .footer {
+      height: 400px;
+      width: 100%;
+      border: 1px solid black;
+      background-color: whitesmoke;
+      /* border: 1px solid black; */
+
+    }
+
+    .bannerText {
+      height: 300px;
+      width: 50%;
+
+      position: relative;
+      bottom: 300px;
+      left: 100px;
+    }
+
+    .bannerHeading {
+      font-family: Poppins;
+      color: white;
+    }
+
+    .bannerPara {
+      font-family: Poppins;
+      color: white;
+      width: 400px;
+    }
+
+    .activeButton {
+      padding: 8px 25px;
+      text-align: center;
+      background-color: white;
+      color: black;
+      border-radius: 5px;
+      border: none;
+      margin-left: 20px;
+    }
+
+    .PButton {
+      padding: 8px 25px;
+      text-align: center;
+      background-color: #fcc302;
+      color: white;
+      border-radius: 5px;
+      border: 1px solid white;
+    }
+
+    .bannerimg {
+      position: relative;
+      bottom: 700px;
+      left: 70px;
+
+    }
+
+    .img2 {
+      position: relative;
+      bottom: 800px;
+      left: 750px;
+
+    }
+
+    .img3 {
+      position: relative;
+      bottom: 950px;
+      left: 600px;
+
+    }
+
+    .img4 {
+      position: relative;
+      bottom: 1150px;
+      left: 1100px;
+
+    }
+
+    .background {
+      position: relative;
+      bottom: 200px;
+      left: 200px;
+    }
+
+    .tilt {
+      transform: scaleX(-1);
+    }
+
+    .left {
+      /* border: 1px solid red; */
+      position: absolute;
+      top: 20px;
+      left: 30px;
+      bottom: 300px;
+    }
+
+    .center {
+      /* border: 1px solid green; */
+      display: block;
+      width: 45%;
+      margin: auto;
+      margin-top: 20px;
+    }
+
+    .right {
+      /* border: 1px solid blue; */
+      display: inline-block;
+      position: absolute;
+      right: 30px;
+      top: 20px;
+    }
+
+    .center li {
+      display: inline;
+
+    }
+
+    .center li a {
+      text-decoration: none;
+      color: white;
+      padding: 5px 10px;
+      font-size: 20px;
+      font-family: Poppins;
+    }
+
+    .center li a:hover {
+      color: black;
+      font-size: 30px;
+    }
+
+    .btn {
+      border-radius: 10px;
+      padding: 5px 20px;
+    }
+
+    .btn:hover {
+      background-color: white;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    /* Style the search field */
+    form.example input[type=text] {
+      padding: 10px;
+      font-size: 17px;
+      border: 1px solid grey;
+      float: left;
+      width: 80%;
+      background: #f1f1f1;
+    }
+
+    /* Style the submit button */
+    form.example button {
+      float: left;
+      width: 20%;
+      padding: 10px;
+      background: white;
+      color: black;
+      font-size: 17px;
+      border: 1px solid grey;
+      border-left: none;
+      /* Prevent double borders */
+      cursor: pointer;
+    }
+
+    form.example button:hover {
+      background: #0b7dda;
+    }
+
+    /* Clear floats */
+    form.example::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .decor {
+      color: black;
+
+    }
+
+    .pic {
+      position: relative;
+      bottom: 0px;
+      left: 200px;
+    }
+
+    .pic1 {
+      position: relative;
+      bottom: 200px;
+      left: 500px;
+    }
+
+    .pic2 {
+      position: relative;
+      bottom: 400px;
+      left: 800px;
+    }
+
+    .name1 {
+      position: relative;
+      bottom: 430px;
+      left: 200px;
+      color: black;
+
+    }
+
+    .name2 {
+      position: relative;
+      bottom: 480px;
+      left: 500px;
+      color: black;
+
+    }
+
+    .name3 {
+      position: relative;
+      bottom: 520px;
+      left: 800px;
+      color: black;
+
+    }
+
+    .q {
+      padding: 10px 30px;
+      text-align: center;
+      background-color: black;
+      color: white;
+      border-radius: 10px;
+      border: none;
+      margin-left: 20px;
+      position: relative;
+      bottom: 535px;
+      left: 510px;
+
+    }
+
+    .cute {
+      color: white;
+      position: relative;
+      width: 400px;
+      left: 300px;
+
+    }
+
+    .ff {
+      color: white;
+      position: relative;
+      width: 400px;
+      left: 750px;
+      bottom: 80px
+    }
+
+    .r {
+      padding: 10px 30px;
+      text-align: center;
+      background-color: whitesmoke;
+      color: black;
+      border-radius: 10px;
+      border: none;
+      margin-left: 20px;
+      position: relative;
+      bottom: -100px;
+      left: 510px;
+    }
+
+    .img20 {
+      position: relative;
+
+
+    }
+
+    .img21 {
+      position: relative;
+      left: 850px;
+
+    }
+
+    .discount {
+      position: relative;
+      bottom: 750px;
+      left: 700px;
+      width: 400px;
+    }
+
+    .s {
+      padding: 10px 30px;
+      text-align: center;
+      background-color: black;
+      color: whitesmoke;
+      border-radius: 10px;
+      border: none;
+      margin-left: 20px;
+      position: relative;
+      bottom: 700px;
+      left: 680px;
+    }
+
+    .promo {
+      position: relative;
+      bottom: 600px;
+      left: 100px;
+      width: 400px;
+    }
+
+    .a {
+      padding: 10px 30px;
+      text-align: center;
+      background-color: black;
+      color: whitesmoke;
+      border-radius: 10px;
+      border: none;
+      margin-left: 20px;
+      position: relative;
+      bottom: 550px;
+      left: 100px;
+    }
+
+    .letter {
+      color: white;
+      text-align: center;
+      position: relative;
+      bottom: 650px;
+      left: 00px;
+
+    }
+
+    .tat {
+      position: relative;
+      bottom: 800px;
+      left: -10px;
+    }
+
+    .work {
+      position: relative;
+      bottom: 1050px;
+      left: 400px;
+    }
+
+    .art {
+      position: relative;
+      bottom: 1250px;
+      left: 350px;
+    }
+
+    .name4 {
+      position: relative;
+      bottom: -150px;
+      left: 100px;
+      color: black;
+      width: 400px;
+
+    }
+
+    .name5 {
+      position: relative;
+      bottom: -20px;
+      left: 500px;
+      color: black;
+      width: 400px
+    }
+
+    .name6 {
+      position: relative;
+      bottom: 110px;
+      left: 900px;
+      color: black;
+      width: 400px;
+
+    }
+
+    .qt {
+      position: relative;
+      bottom: -10px;
+      left: 0px;
+    }
+
+    .pet {
+      color: white;
+      position: relative;
+      bottom: 600px;
+    }
+
+    .end {
+      float: left;
+      width: 20%;
+      padding: 10px;
+      background: white;
+      color: black;
+      font-size: 17px;
+      border: 1px solid grey;
+      border-left: none;
+      /* Prevent double borders */
+      cursor: pointer;
+      position: relative;
+      bottom: 550px;
+      left: 500px;
+    }
+
+    .z {
+      display: block;
+      width: 45%;
+      margin: auto;
+      margin-top: 20px;
+    }
+
+    .z li {
+      list-style-type: none;
+    }
+
+    .y {
+      display: block;
+      width: 45%;
+      margin: auto;
+      margin-top: 20px;
+      position: relative;
+      bottom: 330px;
+      left: 300px;
+    }
+
+    .y li {
+      list-style-type: none;
+    }
+
+    .x {
+      display: block;
+      width: 45%;
+      margin: auto;
+      margin-top: 20px;
+      position: relative;
+      bottom: 600px;
+      left: -450px;
+      width: 300px;
+    }
+
+    .net {
+      position: relative;
+      bottom: 600px;
+      left: 15px;
+    }
+
+    .p {
+      display: block;
+      width: 45%;
+      margin: auto;
+      margin-top: 0px;
+      position: relative;
+      bottom: 850px;
+      left: 600px;
+    }
+
+    .p li {
+      list-style-type: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main">
+    <div class="navBar">
+
+      <div class="center">
+
+        <ul>
+          <li><a href="">Home</a> </li>
+          <li><a href="Menu.html">Menu</a> </li>
+          <li><a href="OurStory.html">Our Story</a> </li>
+          <li><a href="contact.html">Contact US</a> </li>
+        </ul>
+      </div>
+      <div class="right">
+        <form class="example" action="action_page.php">
+          <input type="text" placeholder="   " name="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+
+    </div>
+    <div class="banner">
+      <div class="black1">
+        <img src="Header Background1.png" width="1260" height="397">
+        <div class="bannerText">
+          <h1 class="bannerHeading">
+            <h1 style="color:white;"><i>Italian Food</i></h1>
+
+            <h2 style="color:white;"><I>LOREMIPSUM DOLOR</I></h2>
+            <button class="activeButton"><b>Read More</b></button>
+
+            <p class="bannerPara">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              Lorem Ipsum has been the industry's standard dummy text ever
+            </p>
+        </div>
+
+        <div class="bannerimg">
+          <img src="l.png" alt="Logo Not Found" height="80px" width="200px">
+        </div>
+        <div class="img2">
+          <img src="noodles.png" width="400" height="400">
+        </div>
+        <div class="img3">
+          <img src="eatings.png" width="200" height="200">
+        </div>
+        <div class="img4">
+          <img src="leafs.png" width="180" height="180">
+        </div>
+
+
+      </div>
+
+
+
+
+    </div>
+    <div class="ourServices">
+      <div class="decor">
+        <h1>
+          <center>LOREMIPSUM DOLOR</center>
+        </h1>
+        <h3>
+          <center>Lorem Ipsum available but the majority have
+            suffered alteration in some form, by injected
+            humour randomised words</center>
+        </h3>
+      </div>
+      <div class="pic">
+        <img src="eat3.png" width="200" height="200">
+      </div>
+      <div class="pic1">
+        <img src="eating2.png" width="200" height="200">
+      </div>
+      <div class="pic2">
+        <img src="noodles.png" width="200" height="200">
+      </div>
+      <div class="name1">
+        <h2>Lorem Ipsum</h2>
+      </div>
+      <div class="name2">
+        <h2>Lorem Ipsum</h2>
+      </div>
+      <div class="name3">
+        <h2>Lorem Ipsum</h2>
+      </div>
+      <button class="q">Show More</button>
+    </div>
+  </div>
+
+  <div class="title">
+
+    <h1 style="color:white;">
+      <center><i>LOREMIPSUM DOLOR</i></center>
+    </h1>
+    <div class="cute">
+      <h3><i>Lorem Ipsum available but the majority have
+          suffered alteration in some form, by injected
+          humour randomised words</i></h3>
+    </div>
+    <div class="ff">
+      <h3><i>Lorem Ipsum available but the majority have
+          suffered alteration in some form, by injected
+          humour randomised words</i></h3>
+    </div>
+    <button class="r"><b>MORE INFO</b></button>
+  </div>
+  <div class="loverAnimal">
+    <div class="img20">
+      <img src="eating2.png" width="400" height="400">
+    </div>
+    <div class="img21">
+      <img src="eat3.png" width="400" height="400">
+    </div>
+    <div class="discount">
+      <h1><b>Discount Upto 50% All Excursions</b></h1>
+      <h3>Lorem Ipsum available but the majority have
+        suffered alteration in some form, by injected
+        humour randomised words</h3>
+
+    </div>
+    <button class="s"><b>READ MORE</b></button>
+    <div class="promo">
+      <h1><b>January Promo:Buy 1 Get 1 Free!</b></h1>
+      <h3>Lorem Ipsum available but the majority have
+        suffered alteration in some form, by injected
+        humour randomised words</h3>
+    </div>
+    <button class="a"><b>READ MORE</b></button>
+  </div>
+  <div class="sale">
+    <div class="as">
+      <img src="ww.png" width="1260" height="700">
+
+      <div class="letter">
+        <h1><i>LOREM IPSUM DOLOR</i></center>
+        </h1>
+        <h3><i>Lorem Ipsum available but the majority have
+            suffered alteration in some form, by injected
+            humour randomised words</i></h3>
+      </div>
+      <div class="tat">
+        <img src="leafs2.png" width="1300" height="500">
+      </div>
+      <div class="work">
+        <img src="pizza.png" width="500" height="500">
+      </div>
+      <div class="art">
+        <img src="slice.png" width="300" height="300">
+      </div>
+    </div>
+
+  </div>
+  <div class="team">
+    <div class="name4">
+      <h2><i>Lorem Ipsum</i></h2>
+      <h3><i>Lorem Ipsum available but the majority have
+          suffered alteration in some form, by injected
+          humour randomised words</i></h3>
+    </div>
+    <div class="name5">
+      <h2><i>Lorem Ipsum</i></h2>
+      <h3><i>Lorem Ipsum available but the majority have
+          suffered alteration in some form, by injected
+          humour randomised words</i></h3>
+    </div>
+    <div class="name6">
+      <h2><i>Lorem Ipsum</i></h2>
+      <h3><i>Lorem Ipsum available but the majority have
+          suffered alteration in some form, by injected
+          humour randomised words</i></h3>
+    </div>
+  </div>
+
+  <div class="clients">
+    <div class="qt">
+      <img src="leaf3.png" width="1300" heigth="00">
+    </div>
+    <div class="pet">
+      <h1>
+        <center><i>Title Here</i></center>
+      </h1>
+      <h3>
+        <center><i>Lorem Ipsum available but the majority have
+            suffered alteration in some form, by injected
+            humour randomised words</i></center>
+      </h3>
+    </div>
+    <div class="end">
+      <form class="example" action="action_page.php">
+        <input type="text" placeholder="Your Email   " name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+
+  </div>
+  <div class="footer">
+
+    <div class="z">
+      <i>
+        <ul>
+          <li>
+            <h1>About</h1>
+          </li>
+          <br>
+          <li>
+            <h2>History</h2>
+          </li>
+          <li>
+            <h2>Our Team</h2>
+          </li>
+          <li>
+            <h2>Brand Guidlines</h2>
+          </li>
+          <li>
+            <h2>Terms & Conditions</h2>
+          </li>
+          <li>
+            <h2>Privacy Policy</h2>
+          </li>
+        </ul>
+        <i>
+    </div>
+    <div class="y">
+      <i>
+        <h1>Services</h1>
+        <br>
+        <h2>How to Order</h2>
+
+        <h2>Our Product</h2>
+
+        <h2>Order Status</h2>
+
+        <h2>Promo</h2>
+
+        <h2>Payment Method</h2>
+      </i>
+    </div>
+    <div class="x">
+      <i>
+        <h2>
+          <left>Title Here</left>
+        </h2>
+        <p>Lorem Ipsum available but the majority have
+          suffered alteration in some form, by injected
+          humour randomised words</p>
+      </i>
+    </div>
+    <div class="net">
+      <img src="19.png" width="300" height="50">
+    </div>
+    <div class="p">
+      <i>
+        <h1>Other</h1>
+        <br>
+        <h2>Contact Us </h2>
+
+        <h2>Help</h2>
+
+        <h2>Privacy</h2>
+      </i>
+    </div>
+  </div>
+
+  </div>
+  <script>
+
+  </script>
+</body>
+
+</html>
